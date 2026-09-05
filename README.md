@@ -1,65 +1,115 @@
-# TGT Shop - Website Bán Hàng PC Cao Cấp
-![Logo TTGShop](./img/logo.png)
+# TGT Shop - Website Bán Hàng PC & Linh Kiện Máy Tính Cao Cấp
 
-TGT Shop là một website bán hàng trực tuyến chuyên cung cấp các sản phẩm PC cao cấp, linh kiện máy tính, và các thiết bị văn phòng. Website được thiết kế với giao diện thân thiện, dễ sử dụng và tích hợp nhiều tính năng hỗ trợ người dùng.
+[![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)
+[![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)
+[![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+[![Bootstrap 5](https://img.shields.io/badge/Bootstrap-5.x-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white)](https://getbootstrap.com/)
+[![Responsive](https://img.shields.io/badge/Design-Responsive-success?style=for-the-badge)](#tính-năng-nổi-bật)
 
-## Các chức năng chính
+> **Website thương mại điện tử chuyên cung cấp máy tính để bàn (PC Gaming, PC Đồ Họa, PC Văn Phòng), linh kiện phần cứng và thiết bị ngoại vi với giao diện hiện đại, tối ưu trải nghiệm người dùng trên mọi kích cỡ màn hình.**
 
-### 1. **Trang chủ**
-- Hiển thị các sản phẩm nổi bật với hình ảnh và thông tin chi tiết.
-- Có carousel (trình chiếu) để hiển thị các sản phẩm đặc biệt.
+---
 
-### 2. **Trang sản phẩm**
-- Hiển thị danh sách tất cả các sản phẩm.
-- Tìm kiếm sản phẩm theo tên hoặc mô tả.
-- Lọc sản phẩm theo danh mục (PC Gaming, PC Văn Phòng, Linh Kiện, v.v.).
-- Sắp xếp sản phẩm theo giá (tăng dần/giảm dần) hoặc theo tên (A-Z/Z-A).
+## Tổng quan dự án
 
-### 3. **Giỏ hàng**
-- Thêm sản phẩm vào giỏ hàng từ trang sản phẩm hoặc trang chi tiết sản phẩm.
-- Hiển thị danh sách sản phẩm trong giỏ hàng với số lượng và giá tiền.
-- Tăng/giảm số lượng sản phẩm trong giỏ hàng.
-- Xóa sản phẩm khỏi giỏ hàng.
-- Hiển thị tổng tiền và phí vận chuyển.
-- Chuyển đến trang thanh toán.
+TGT Shop là một ứng dụng web bán hàng hoàn chỉnh mô phỏng các nghiệp vụ thương mại điện tử thực tế. Website được xây dựng với cấu trúc mã nguồn tối ưu bằng HTML5, CSS3, JavaScript ES6 và Bootstrap, cung cấp đầy đủ chu trình mua sắm từ tìm kiếm, xem chi tiết, giỏ hàng, thanh toán đa phương thức đến in hóa đơn xác nhận.
 
-### 4. **Thanh toán**
-- Nhập thông tin khách hàng (họ tên, email, số điện thoại, địa chỉ, ghi chú).
-- Chọn phương thức thanh toán (COD, chuyển khoản ngân hàng, ví MoMo).
-- Lưu thông tin đơn hàng vào `localStorage`.
-- Chuyển đến trang xác thực thanh toán.
+Hệ thống quản lý trạng thái phiên đăng nhập và dữ liệu đơn hàng phía Client thông qua `localStorage`, đảm bảo dữ liệu mua sắm được bảo lưu xuyên suốt quá trình tương tác mà không bị mất đi khi làm mới trang.
 
-### 5. **Xác thực thanh toán**
-- Hiển thị CAPTCHA để xác thực thanh toán.
-- Kiểm tra mã CAPTCHA người dùng nhập.
-- Chuyển đến trang hóa đơn nếu xác thực thành công.
+---
 
-### 6. **Hóa đơn**
-- Hiển thị thông tin khách hàng và danh sách sản phẩm đã đặt hàng.
-- Hiển thị tổng tiền thanh toán.
-- Có nút "In Hóa Đơn" để in hóa đơn.
+## Tính năng nổi bật
 
-### 7. **Đăng ký, đăng nhập và đăng xuất**
-- Đăng ký tài khoản với tên đăng nhập, email và mật khẩu.
-- Sau khi đăng ký, người dùng cần nhập mã xác thực để kích hoạt tài khoản.
-- Đăng nhập bằng tài khoản đã đăng ký.
-- Hiển thị tên người dùng sau khi đăng nhập.
-- Đăng xuất khỏi tài khoản.
-- Khi đăng xuất, giỏ hàng sẽ được xóa nếu người dùng đã đăng nhập trước đó.
+### 1. Trang chủ & Giới thiệu sản phẩm
+- Banner quảng cáo và thanh trượt (Carousel) trình diễn các bộ máy PC nổi bật và chương trình khuyến mãi theo mùa.
+- Phân loại trực quan các danh mục sản phẩm thịnh hành: PC Gaming, PC Workstation, Linh kiện phần cứng, Màn hình, Bàn phím cơ.
 
-### 8. **Quản lý người dùng**
-- Lưu thông tin người dùng và trạng thái đăng nhập bằng `localStorage`.
-- Kiểm tra thông tin đăng nhập và đăng ký.
+### 2. Danh mục sản phẩm & Bộ lọc thông minh
+- Hiển thị danh sách sản phẩm với thẻ thông tin chi tiết: tên linh kiện, cấu hình vắn tắt, giá niêm yết và trạng thái còn hàng.
+- Tìm kiếm tức thì theo tên hoặc từ khóa sản phẩm.
+- Bộ lọc nâng cao theo khoảng giá, danh mục và thương hiệu.
+- Sắp xếp linh hoạt: giá tăng dần, giá giảm dần, bảng chữ cái A-Z và Z-A.
 
-## Công Nghệ Sử Dụng
-- **HTML5**: Cấu trúc trang web.
-- **CSS3**: Thiết kế giao diện và bố cục.
-- **JavaScript**: Xử lý logic, tương tác người dùng, và quản lý dữ liệu.
-- **Bootstrap**: Tạo giao diện responsive.
-- **LocalStorage**: Lưu trữ dữ liệu người dùng và giỏ hàng.
+### 3. Trang chi tiết sản phẩm
+- Thư viện ảnh sản phẩm độ nét cao với tính năng chuyển đổi ảnh đại diện.
+- Bảng thông số kỹ thuật chi tiết (CPU, GPU, RAM, Mainboard, PSU, Tản nhiệt, Bảo hành).
+- Điều chỉnh số lượng và thêm trực tiếp vào giỏ hàng.
 
+### 4. Quản lý Giỏ hàng (Shopping Cart)
+- Thêm, giảm số lượng hoặc loại bỏ sản phẩm nhanh chóng.
+- Tự động tính toán tổng tiền hàng, tiền thuế và phí giao hàng theo thời gian thực.
+- Đồng bộ hóa dữ liệu giỏ hàng vào `localStorage` của trình duyệt.
 
-## 🚀 Cách Chạy Dự Án
-1. Clone repository từ GitHub:
+### 5. Quy trình Đặt hàng & Thanh toán (Checkout Workflow)
+- Thu thập thông tin giao hàng: Họ tên, số điện thoại, địa chỉ nhận hàng, ghi chú đơn hàng.
+- Lựa chọn linh hoạt các hình thức thanh toán phổ biến:
+  - Thanh toán khi nhận hàng (COD).
+  - Chuyển khoản ngân hàng trực tuyến.
+  - Thanh toán qua ví điện tử MoMo.
+- Cơ chế xác thực mã CAPTCHA trước khi hoàn tất giao dịch nhằm ngăn chặn hành vi spam đơn hàng tự động.
+
+### 6. Xuất & In Hóa đơn mua hàng (Invoice)
+- Hiển thị tóm tắt toàn bộ thông tin đơn hàng sau khi giao dịch thành công.
+- Hỗ trợ nút in hóa đơn trực tiếp từ trình duyệt phục vụ lưu trữ hoặc bảo hành.
+
+### 7. Xác thực & Quản lý người dùng
+- Đăng ký tài khoản mới kèm bước nhập mã kích hoạt bảo mật.
+- Đăng nhập, ghi nhớ phiên làm việc và hiển thị tên người dùng trên thanh điều hướng.
+- Tự động dọn dẹp và bảo toàn giỏ hàng tương ứng khi người dùng chuyển đổi trạng thái đăng nhập/đăng xuất.
+
+---
+
+## Cấu trúc thư mục dự án
+
+```
+CuaHangMayTinh-TGTShop/
+├── html/
+│   ├── index.html                  # Trang chủ giới thiệu
+│   ├── products.html               # Trang danh sách & bộ lọc sản phẩm
+│   ├── product-detail.html         # Trang chi tiết thông số sản phẩm
+│   ├── cart.html                   # Trang giỏ hàng
+│   ├── checkout.html               # Trang nhập thông tin thanh toán
+│   ├── verification_payment.html   # Trang xác thực CAPTCHA thanh toán
+│   ├── invoice.html                # Trang hóa đơn mua hàng hoàn tất
+│   ├── register.html               # Trang đăng ký thành viên
+│   ├── login.html                  # Trang đăng nhập
+│   └── verification.html           # Trang kích hoạt tài khoản
+├── css/                            # Các file stylesheet định kiểu giao diện
+├── js/
+│   ├── main.js                     # Xử lý logic nghiệp vụ, giỏ hàng & localStorage
+│   └── bootstrap.min.js            # Thư viện JavaScript hỗ trợ giao diện Bootstrap
+├── img/                            # Hình ảnh sản phẩm, banner và logo thương hiệu
+└── README.md                       # Tài liệu hướng dẫn dự án
+```
+
+---
+
+## Công nghệ & Kỹ thuật áp dụng
+
+| Thành phần | Công nghệ | Ứng dụng cụ thể |
+|---|---|---|
+| **Cấu trúc web** | HTML5 Semantic Tags | Sử dụng các thẻ ngữ nghĩa (`header`, `nav`, `section`, `article`, `footer`) chuẩn SEO |
+| **Định dạng giao diện** | CSS3 & Flexbox / Grid | Tùy biến kiểu dáng màu sắc hiện đại, hiệu ứng hover mượt mà |
+| **Responsive Design** | Bootstrap 5 | Đảm bảo trang web hiển thị tối ưu trên Desktop, Tablet và Smartphone |
+| **Logic & Tương tác** | JavaScript (ES6+) | Thao tác DOM, xử lý sự kiện, tính toán giỏ hàng, xác thực form |
+| **Client Storage** | HTML5 LocalStorage | Lưu trữ dữ liệu giỏ hàng, thông tin tài khoản và lịch sử đặt hàng phía trình duyệt |
+
+---
+
+## Hướng dẫn cài đặt & Chạy dự án
+
+Website hoạt động hoàn toàn ở phía máy khách (Front-end Static Web), không cần cài đặt môi trường máy chủ phức tạp:
+
+### Cách 1: Chạy trực tiếp từ trình duyệt
+1. Clone repository về máy tính:
    ```bash
-   git clone https://github.com/snizyboi0165/23695521_NguyenCaoVietAn_BaiTapLonWeb.git
+   git clone https://github.com/snizyboi0165/CuaHangMayTinh-TGTShop.git
+   ```
+2. Truy cập vào thư mục `CuaHangMayTinh-TGTShop/html/`.
+3. Nhấp đúp chuột vào file `index.html` để mở trang web bằng trình duyệt bất kỳ (Chrome, Edge, Firefox, Brave).
+
+### Cách 2: Sử dụng Live Server trong VS Code (Khuyến nghị)
+1. Mở thư mục dự án trong **Visual Studio Code**.
+2. Cài đặt tiện ích mở rộng **Live Server** (của tác giả Ritwick Dey).
+3. Nhấp chuột phải vào file `html/index.html` và chọn **Open with Live Server**.
+4. Website sẽ tự động khởi chạy tại địa chỉ `http://127.0.0.1:5500/html/index.html`.
